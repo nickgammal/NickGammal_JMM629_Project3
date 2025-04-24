@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+    <title>What is a Wandering Albatross?</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="scroll-snap-align: center;">
+    <h1>
+      What is a Wandering Albatross?
+    </h1>
+    <div class="words">
+      <h3>What are they like?</h3>
+      <p>
+        Hello! This is a wandering albatross. They are large seabirds that 
+        spend the majority of their life "wandering" about the Southern 
+        Ocean. Albatrosses are the group of birds with the largest 
+        wingspan in the world. Enter your height in centimeters to the 
+        figure below to see how tall you are compared to their wingspan. 
+        Despite their great size, these birds typically only weigh about 25 
+        kilograms, surprisingly light for such a large animal!
+      </p>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+      <h3>Where do they live?</h3>
+      <p>
+        Wandering albatrosses spend most of their time flying or floating on 
+        the ocean. They spend very little time on land, and when they do it 
+        is only in coastal or island regions of the antarctic and 
+        subantarctic. Notice the lack of data in the South Pacific Ocean. 
+        This reflects the observation bias due to increased scientific effort 
+        in waters near Australia and near scientific stations on the 
+        Antarctic Peninsula.
+      </p>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+      <h3>How often do they land?</h3>
+      <p>
+        Wandering albatrosses can fly for about 16,000 kilometers without 
+        resting on land or on water. They only spend time regularly on land 
+        every two years during breeding season (which lasts from the end of 
+        November to the beginning of March). These two maps show the 
+        locations of albatrosses seen during breeding season (Blue) and 
+        outside of breeding season (Yellow). Notice that a large proportion 
+        of the birds seen during mating season were seen over open ocean. 
+        That is beacuse only about half the birds will breed each season 
+        while the other half is "on sabbatical". This phenomenon is called 
+        "temporal reproductive isolation," which can lead to the two 
+        breeding groups evolving into separate species over generational 
+        timescales.
+      </p>
+
+    </div>
+    <div class="verticalLine"></div>
+    <div class="sizecomp">
+      <img id="stickperson" src="stickperson.png" style="height: 5vh;">
+      <img src="albatross.png" style="max-width: 50%; height: 70%;">
+      <sl-input id="heightInput" label="How tall are you?" placeholder="180" help-text="Please answer in centimeters" defaultValue="0"></sl-input>
+    </div>
+    <div class="map">
+      <img src="all_records.svg">
+    </div>
+    <div class="split-panel-divider">
+      <sl-image-comparer>
+        <sl-icon slot="divider" name="grip-vertical"></sl-icon>
+        <img
+          slot="before"
+          src="breeding.png"
+          style="max-width: 60vw;"
+          alt="Grayscale version of kittens in a basket looking around."
+        />
+        <img
+          slot="after"
+          src="notbreeding.png"
+          style="max-width: 60vw;"
+          alt="Color version of kittens in a basket looking around."
+        />
+      </sl-image-comparer>
+    </div>
+    
+</body>

@@ -1,0 +1,74 @@
+
+.split-panel-divider {
+  padding: 10vb 0vw;
+  left: 2vw; 
+  top: 240vh;
+  height: 100vb; 
+  width: 60vw; 
+  position: absolute;
+}
+
+.split-panel-divider sl-image-comparer {
+  --divider-width: 3px;
+
+}
+
+.split-panel-divider sl-image-comparer::part(divider) {
+  background-color: var(--sl-color-gray-950);
+}
+
+.split-panel-divider sl-icon {
+  position: absolute;
+  border-radius: var(--sl-border-radius-small);
+  background: var(--sl-color-gray-950);
+  color: var(--sl-color-gray-950);
+  padding: 0.5rem 0.125rem;
+}
+
+.split-panel-divider sl-image-comparer::part(divider):focus-visible {
+  background-color: var(--sl-color-gray-950);
+}
+
+.split-panel-divider sl-image-comparer:focus-within sl-icon {
+  background-color: var(--sl-color-gray-950);
+  color: var(--sl-color-gray-950);
+}
+
+.verticalLine {
+  border-left: solid var(--sl-color-gray-950);
+  left: 65%;
+  top: 10vb;
+  position: fixed;
+  height: 85vb;
+  width: 3px;
+}
+
+.words {
+  left: 70%;
+  top: 15vb;
+  position: relative;
+  height: 70vb;
+  width: 25vw;
+  float: left;
+}
+
+.map {
+  padding: 10vb 0vw;
+  left: 2vw; 
+  top: 120vh;
+  height: 100vb; 
+  width: 60vw; 
+  position: absolute;
+}
+
+.sizecomp {
+  padding: 10vb 0vw;
+  left: 2vw; 
+  height: 100vb; 
+  width: 60vw; 
+  position: absolute;
+}
+
+.sizecomp img {
+  height: 100%;
+}
